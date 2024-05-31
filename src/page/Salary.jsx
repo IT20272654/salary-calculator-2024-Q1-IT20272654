@@ -39,28 +39,28 @@ const Salary = () => {
         });
         setFullResult(fullTotal);
 
-           // Calculate APIT
-    if (fullTotal < 100000) {
-        setApit(0); // APIT should be 0 when fullTotal is less than 100000
-    } else if (fullTotal >= 100000 && fullTotal < 141667) {
-        setApit((fullTotal * 0.06) - 6000);
-    } else if (fullTotal >= 141667 && fullTotal < 183333) {
-        setApit((fullTotal * 0.12) - 14500);
-    } else if (fullTotal >= 183333 && fullTotal < 225000) {
-        setApit((fullTotal * 0.18) - 25500);
-    } else if (fullTotal >= 225000 && fullTotal < 266667) {
-        setApit((fullTotal * 0.24) - 39000);
-    } else if (fullTotal >= 266667 && fullTotal < 308333) {
-        setApit((fullTotal * 0.30) - 55000);
-    } else {
-        setApit((fullTotal * 0.36) - 73500);
-    }
+        // Calculate APIT
+        if (fullTotal < 100000) {
+            setApit(0); 
+        } else if (fullTotal >= 100000 && fullTotal < 141667) {
+            setApit((fullTotal * 0.06) - 6000);
+        } else if (fullTotal >= 141667 && fullTotal < 183333) {
+            setApit((fullTotal * 0.12) - 14500);
+        } else if (fullTotal >= 183333 && fullTotal < 225000) {
+            setApit((fullTotal * 0.18) - 25500);
+        } else if (fullTotal >= 225000 && fullTotal < 266667) {
+            setApit((fullTotal * 0.24) - 39000);
+        } else if (fullTotal >= 266667 && fullTotal < 308333) {
+            setApit((fullTotal * 0.30) - 55000);
+        } else {
+            setApit((fullTotal * 0.36) - 73500);
+        }
 
         // Calculate the total with EPF 12% and ETF 3%
         const epf12 = result * 0.12;
         const etf3 = result * 0.03;
         setTotalWithEpfEtf(totalEarnings+salary-totalDeductions + epf12 + etf3);
-    }, [salary, additionalValues, subtractValues]);
+    }, [salary, additionalValues, subtractValues,totalEarnings,totalDeductions,result]);
 
     const handleAdditionalValueChange = (index, newValue) => {
         const updatedValues = [...additionalValues];
@@ -282,3 +282,7 @@ const Salary = () => {
 };
 
 export default Salary;
+
+
+
+
