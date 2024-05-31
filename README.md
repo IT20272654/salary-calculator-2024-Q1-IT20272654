@@ -5,4 +5,4 @@ Simply input your basic salary and other income, then the application will do th
 
 # Contributor's Names
 ### Shavindu Rajapaksha
-<img width="1440" alt="Screenshot 2024-05-31 at 16 39 47" src="https://github.com/IT20272654/salary-calculator-2024-Q1-IT20272654/assets/89459361/25d169ad-bbf5-408c-b51e-421a6040bf80">
+<img width="1440" alt="Screenshot 2024-05-31 at 16 41 59" src="https://github.com/IT20272654/salary-calculator-2024-Q1-IT20272654/assets/89459361/f729b2cf-3b3b-4984-8613-3b2eb600ff9d">
